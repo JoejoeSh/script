@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="info"></div>
+    <div class="go"></div>
+    
+    <script>
+        let age = prompt("how old are you?");
+            age = +age;
+        // info.innerHTML = isNaN(age) ? "請輸入年紀" : "請進" ;
+        // info.innerHTML = !isNaN(age) && (age>18) ? "請進" : "回家" ;
+
+        document.querySelector('.go').innerHTML = !isNaN(age) && (age>18) ? "請進" : "回家" ;
+
+        let a= 10,
+            b,
+            c;
+        let d= a>10 ? (b=1) : (c=2);
+        console.log(b);
+            
+    </script>
+</body>
+</html>
