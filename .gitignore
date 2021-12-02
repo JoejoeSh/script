@@ -1,0 +1,4 @@
+/.vscode
+
+git config --global user.name "Joe Shih"
+git config --global user.email injoe1001@gmail.com
