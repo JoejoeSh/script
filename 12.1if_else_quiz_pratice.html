@@ -14,19 +14,29 @@
     <div id="info"></div>
         
     <script>
-        const myinput = document.querySelector("#myinput");
-        const info = document.querySelector("#info");
+        let myinput = document.querySelector("#myinput");
+        let info = document.querySelector("#info");
+        
 
+        // function answer(){
+        //     let age = +myinput.value;
+
+        //     if((age>=18)){
+        //         info.innerHTML = "welcome" ;
+        //     }
+        //     else{
+        //         info.innerHTML = "go home" ;
+        //     }
+        // }
+        
         function answer(){
-            if((+myinput.value>=18)){
-                info.innerHTML = "welcome" ;
-            }
-            else{
-                info.innerHTML = "go home" ;
-            }
+            let age = +myinput.value;
+            document.querySelector("#info").innerHTML = (age>=18) ? "welcome":"go home";
         }
-
+       
     </script>
+
+
 
 </body>
 </html>
